@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="robots" content="noarchive" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">  
+<title>The Feynman Lectures on Physics Audio Collection</title>
+<link href="css/flp38.css" media="screen" rel="stylesheet" type="text/css">
+<link href="css/jplayer.red.tuesday38.css" rel="stylesheet" type="text/css" />
+<link href="css/sliding_menu38.css" id="sliding-menu-style" media="screen" rel="stylesheet" type="text/css" title="Sliding">
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.11.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+<script src="jquery.mobile.custom.min.js"></script>
+<script src="jquery.color-2.1.2.min.js"></script>
+<script src="isInViewport.min.js"></script>
+<script src="flphome38.js" defer></script>
+<script src="jquery.jplayer.js"></script>
+<script src="jplayer.playlist.js"></script>
+</head>
+<body>
+<style>
+div.content {
+    width: 90%;
+    margin: auto;
+}
+</style>
+<div class="main" style="">
+<div class="content">
+<div class="document">
+<div id="FLPTapes" class="chapter">
+<h2 class="chapter-title">The Feynman Lectures on Physics Audio Collection</h2>
+
+<script src="flpplaylist.js"></script>
+<script type="text/javascript">
+var flpPlaylistPlayer;
+$(document).ready(function()
+{
+    flpPlaylistPlayer = new jPlayerPlaylist({
+        jPlayer: "#jquery_jplayer_1",
+        cssSelectorAncestor: "#jp_container_1"
+    },
+    flpPlaylist,
+    {
+        swfPath: "./",
+        supplied: "m4a,oga",
+        wmode: "window",
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: false,
+        keyEnabled: true
+    });
+    
+    $("div.flp-link button").click(function() {
+        window.location.href = flpPlaylistLectures[flpPlaylistPlayer.current] + ".html"
+    });
+});
+</script>
+<style>
+#FLPTapes .jp-audio
+{
+    width: 410px;
+}
+
+#FLPTapes .jp-stop,
+#FLPTapes .jp-previous,
+#FLPTapes .jp-next {
+    width: 24px;
+}
+
+#FLPTapes .jp-stop {
+    margin-left: 1px;
+}
+
+#FLPTapes .jp-audio .jp-type-playlist .jp-progress,
+.jp-audio .jp-type-playlist .jp-time-holder  {
+    left: 134px;
+    width: 160px;
+}
+
+#FLPTapes .jp-volume-controls {
+    left: 305px;
+}
+
+.flp-link {
+    margin: 10px auto 0px auto;
+}
+
+.flp-link button {
+    background-color: #ffa;
+    border: 3px solid #9c0000;
+    padding: 3px 5px;
+    font-size: 15px;
+}
+
+.flp-link button:hover {
+    color: #0d88c1;
+}
+
+.flp-link button:active {
+    background-color: #9c0000;
+    color:white;
+}
+</style>
+<div id="audiopopdiv" class="jp-audio popup flp-playlist">
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+    <div class="jp-type-playlist">
+        <div class="jp-gui jp-interface">
+            <div class="jp-controls">
+                <button class="jp-previous" role="button" tabindex="0" title="previous('[')">previous</button>
+                <button class="jp-play" role="button" tabindex="0" title="play/pause('p')">play</button>
+                <button class="jp-next" role="button" tabindex="0" title="next(']')">next</button>
+                <button class="jp-stop" role="button" tabindex="0">stop</button>
+            </div>
+            <div class="jp-progress">
+                <div class="jp-seek-bar">
+                    <div class="jp-play-bar"></div>
+                </div>
+            </div>
+            <div class="jp-volume-controls">
+                <button class="jp-mute" role="button" tabindex="0" title="mute('m')">mute</button>
+                <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                <div class="jp-volume-bar" title="volume down(',')/up('.')">
+                    <div class="jp-volume-bar-value"></div>
+                </div>
+            </div>
+            <div class="jp-time-holder">
+                <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+            </div>
+        </div>
+        <div class="jp-playlist">
+            <div class="flp-playlist-container">
+                <ul>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+        <div class="jp-no-solution">
+            <span>Update Required</span>
+            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+        </div>
+    </div>
+    <div id="norecording" class="nodisplay">
+        The recording of this lecture is missing from the Caltech Archives.
+    </div>
+</div>
+</div>
+
+<div class="flp-link">
+<button role="button" tabindex="0">Take me to the FLP chapter.</button>
+</div>
+
+<div id="FLPTapes-S1" class="section">
+<h3 class="section-title">
+<i><b><font style="font-size:135%">About The Feynman Lectures on Physics Audio Collection</font></b></i>
+</h3>
+
+<div id="FLPTapes-S1-p1" class="para">
+<p class="p">
+These are the tape recordings of Richard Feynman's 1961-64 Caltech Introductory Physics lectures, which form the basis of the book <i>The Feynman Lectures on Physics.</i> The original recordings were made on 1/4" reel-to-reel tapes, now preserved in Caltech's Archive. In 2010 the entire collection was digitized by media preservationist George Blood, at a sampling rate of 96 kHz with 24-bit samples, PCM-encoded in WAV files about 2 GB each in size. For this online publication we are serving more compact versions, downsampled to 48 kHz with 16-bit samples, reencoded as AAC-HE (mp4) and Opus (ogg) at a data rate of 48 kbps.</p></div>
+
+<div id="FLPTapes-S1-p2" class="para">
+<p class="p">
+We present entire lecture tapes without any editing or enhancement, including the tape leader. Parts of some lectures edited out of the commercial versions of these recordings are preserved here intact. Recorded material <i>outside</i> the lectures, including discussions between Feynman and his students and/or colleagues, never previously published, can be found in this publication. Three entire lecture recordings never heard before outside Caltech, including two lectures on Quantum Mechanics Feynman gave in 1964, are also included in this publication.<a id="footnote_source_1" href="#footnote_1"><sup class="mark">1</sup></a></p></div>
+
+<div id="FLPTapes-S1-p3" class="para">
+<p class="p">
+I am very excited to at long last be able to share these lecture recordings online, so that everyone can listen to them in their naked beauty. You will hear a lot you have not heard before, in particular, the many "after-lecture" discussions between Feynman and his students, many of which are entertaining and informative.<a id="footnote_source_1" href="#footnote_2"><sup class="mark">2</sup></a></p></div>
+
+<div id="FLPTapes-S1-p4" class="para">
+<p class="p">
+Lecture #30 <i>Interference</i>, given on February 20, 1962, is of some historical interest: Feynman delays starting by 6 minutes because earlier that day John Glenn became the first American (and second man, after Yuri Gagarin) to orbit Earth, and he was due to splash down! So, there is a prolonged "before-lecture" discussion in the recording. In the background you can hear the excited hubbub of the students, concerned for Glenn's safe return. Feynman begins his lecture, "Mr. Glenn is in orbit and he'll probably come down during this lecture. We'll see if we get any news from it."
+ </p></div>
+
+<div id="FLPTapes-S1-p5" class="para">
+<p class="p">
+In closing, I wish to thank some people who helped make this publication possible, in particular our publisher Thomas Kelleher at Basic Books, Carver Mead and Adam Cochran at Caltech, and Natallia Piatrenka.
+ </p></div>
+
+
+<ol id="footnotes">
+<li class="footnote">
+<a id="footnote_1"></a>The original tape recording of the first lecture <i>Atoms in motion</i> suffered some damage, either in the making, or later, so it sounds 'clipped' in many places, particularly when Feynman speaks loudly. (This is the only recording in the collection that is damaged.)
+<a href="#footnote_source_1">↩</a>
+</li>
+<li class="footnote">
+<a id="footnote_2"></a>It can sometimes be a bit hard to hear the students in these discussions, because Feynman was wearing the microphone.
+<a href="#footnote_source_2">↩</a>
+</li>
+</ol>
+
+<footer>
+<a href="I_copyright.html">
+<span>Copyright © 1963, 2006, 2013, 2021</span>
+<span>by the California Institute of Technology,</span>
+<span>Michael A. Gottlieb and Rudolf Pfeiffer</span></a>
+</footer>
+
+</div>
+</div>
+    </div>
+   </div>
+</body>
+</html>
